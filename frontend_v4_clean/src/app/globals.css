@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root { /* Light Mode Defaults */
+    --background: 0 0% 100%; /* White */
+    --foreground: 224 71.4% 4.1%; /* Dark Slate Blue/Almost Black */
+    --card: 0 0% 97%; /* Slightly Off-White/Very Light Gray */
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 142.1 70.6% 35.3%; /* Darker Green for light mode primary */
+    --primary-foreground: 210 20% 98%; /* White for Green buttons */
+    --secondary: 220 13% 91%; /* Light Gray */
+    --secondary-foreground: 224 71.4% 4.1%;
+    --muted: 220 13% 91%;
+    --muted-foreground: 220 8.9% 46.1%; /* Medium Gray for muted text */
+    --accent: 142.1 70.6% 30.3%; /* Even Darker Green for accents */
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 72.2% 50.6%; /* Red */
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 86%; /* Light Gray border */
+    --input: 0 0% 93%; /* Lighter Gray for input backgrounds in light mode */
+    --ring: 142.1 70.6% 35.3%;
+    --radius: 0.75rem;
+    --primary-rgb: 50, 150, 100; /* Approx RGB for the primary green in light mode */
+  }
+
+  .dark {
+    --background: 145 30% 8%; /* Very Dark Green */
+    --foreground: 210 20% 98%; /* Almost White */
+    --card: 145 30% 12%; /* Dark Green (lighter than background) */
+    --card-foreground: 210 20% 98%;
+    --popover: 145 30% 12%; /* Dark Green */
+    --popover-foreground: 210 20% 98%;
+    --primary: 142.1 70.6% 45.3%; /* Vivid Green for dark mode primary */
+    --primary-foreground: 210 20% 98%; /* White for Green buttons */
+    --secondary: 145 25% 20%; /* Muted Dark Green */
+    --secondary-foreground: 210 20% 98%;
+    --muted: 145 25% 20%; /* Muted Dark Green */
+    --muted-foreground: 145 15% 65%; /* Lighter Gray-Green for muted text */
+    --accent: 142.1 70.6% 35.3%; /* Darker Green for accents */
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%; /* Red */
+    --destructive-foreground: 210 20% 98%;
+    --border: 145 25% 15%; /* Dark Green Border */
+    --input: 145 25% 18%; /* Dark Green Input Background */
+    --ring: 142.1 70.6% 45.3%; /* Vivid Green */
+    --primary-rgb: 74, 222, 128; /* Approx RGB for the vivid green in dark mode */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  /* Custom glow for primary buttons */
+  .btn-primary-glow {
+    @apply shadow-[0_0_15px_0px_rgba(var(--primary-rgb),0.5)];
+  }
+  .btn-primary-glow:hover {
+    @apply shadow-[0_0_25px_5px_rgba(var(--primary-rgb),0.5)];
+  }
+}
+

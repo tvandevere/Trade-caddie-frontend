@@ -1,0 +1,45 @@
+# Frontend UI/UX Optimization Todo
+
+- [x] **Global Styles & Layout:**
+    - [x] Review and refine `globals.css` for consistent base styling (typography, spacing, colors for dark theme).
+    - [x] Ensure `RootLayout.tsx` and `GlobalHeader.tsx` provide a solid and consistent structure.
+    - [x] Verify theme toggle functionality and ensure dark mode is polished.
+    - [x] Ensure logo is correctly displayed and sized in the `GlobalHeader.tsx`.
+    - [x] Check bottom navigation (`BottomNavbar.tsx`) for correct tab order, active states, and overall aesthetics, drawing inspiration from Webull/Robinhood.
+- [x] **Pre-Market Tab (`pre-market/page.tsx`):**
+    - [x] Refine layout for AI-driven routine section.
+    - [x] Improve presentation of market overview (placeholder content for now).
+    - [x] Ensure consistent styling with other tabs.
+- [x] **Market Tab (`market/page.tsx` - Default View):**
+    - [x] Refine layout for charting area (placeholder for now).
+    - [x] Design and refine UI for AI trade ideas toggle (stock/options) and display.
+    - [x] Improve layout for In-Market AI Thoughts feed.
+    - [x] Design UI for trade logging functionality.
+    - [x] Ensure overall look and feel aligns with Webull/Robinhood references.
+    - [x] Fix HTML structure error causing hydration warning (Badge inside p tag).
+- [x] **Post-Market Tab (`post-market/page.tsx`):**
+    - [x] Refine layout for AI mentor conversation section.
+    - [x] Improve presentation of personalized recommendations (placeholder content).
+- [x] **Education Tab (`education/page.tsx`):**
+    - [x] Refine layout for displaying educational content (articles/videos placeholders).
+    - [x] Ensure easy navigation and readability.
+    - [x] Implement search and filtering functionality.
+- [ ] **Leaderboard Tab (`leaderboard/page.tsx`):** (Disabled as per user request due to persistent errors. Functionality may be integrated into Community tab later.)
+    - [ ] Design UI for performance tracking (P&L, avg gain/loss placeholders).
+    - [ ] Design UI for community comparison section.
+    - [ ] Enhance visual appeal with avatars, rank highlighting, and badges.
+    - [ ] Add time period filter.
+- [x] **Community Tab (`community/page.tsx`):**
+    - [x] Refine layout for social features (placeholders).
+    - [x] Implement UI for creating posts, viewing posts, and basic comment display.
+    - [x] Enhance interactivity for likes, comments, and sharing (mocked).
+- [x] **AI Chat Bot Integration (`AIChatBot.tsx` and tab pages):**
+    - [x] Review placement and proactive interaction design within tab feeds.
+    - [x] Refine visual appearance of the chat bot ("MentorBull" persona).
+- [x] **General Responsiveness & Mobile-Friendliness:**
+    - [x] Test all tabs and components on various screen sizes.
+    - [x] Ensure app-like navigation and usability on mobile views.
+- [x] **Code Quality & Consistency:**
+    - [x] Ensure consistent use of Tailwind CSS classes.
+    - [x] Review component structure for clarity and reusability.
+
